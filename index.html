@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Sticks Kilbane | @gimpysticks</title>
+  <meta name="description" content="Personal hub and links for John Sticks Kilbane (@gimpysticks) - AI Art, Redbubble Shop, and Socials.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: rgba(22, 27, 34, 0.75);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --card-hover-bg: rgba(33, 38, 45, 0.95);
+      --card-hover-border: #58a6ff;
+      --text: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-glow: rgba(88, 166, 255, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1a2332 0%, #0d1117 75%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.25rem 4rem;
+      line-height: 1.5;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 580px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      margin-bottom: 1.25rem;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 25px var(--accent-glow);
+      object-fit: cover;
+      display: block;
+    }
+
+    .header-text {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .name {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+
+    .handle {
+      font-size: 1rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .bio {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      padding: 1rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      color: var(--text);
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(8px);
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      background: var(--card-hover-bg);
+      border-color: var(--card-hover-border);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .link-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .link-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .link-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .link-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .link-arrow {
+      color: var(--text-muted);
+      margin-left: 0.75rem;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .link-card:hover .link-arrow {
+      transform: translateX(4px);
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar-wrapper">
+      <img src="https://avatars.githubusercontent.com/u/7674359?v=4" alt="John Sticks Kilbane" class="avatar">
+    </div>
+
+    <div class="header-text">
+      <h1 class="name">John Sticks Kilbane</h1>
+      <div class="handle">@gimpysticks</div>
+      <p class="bio">AI Artist & Creative Technologist. Prompt design, digital generative artwork, and linux tinkering.</p>
+    </div>
+
+    <div class="links">
+      <a href="https://www.redbubble.com/people/gimpysticks/shop?asc=u" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon">🎨</div>
+        <div class="link-content">
+          <span class="link-title">Redbubble Shop</span>
+          <span class="link-desc">Apparel, prints, stickers & merchandise featuring generative art</span>
+        </div>
+        <svg class="link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="https://linktr.ee/gimpysticks" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon">🌳</div>
+        <div class="link-content">
+          <span class="link-title">Linktree</span>
+          <span class="link-desc">All art channels, portfolio collections & social hubs</span>
+        </div>
+        <svg class="link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="https://www.instagram.com/gimpysticks/" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon">📸</div>
+        <div class="link-content">
+          <span class="link-title">Instagram</span>
+          <span class="link-desc">Daily Midjourney & AI generative art posts</span>
+        </div>
+        <svg class="link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="https://github.com/gimpysticks" target="_blank" rel="noopener noreferrer" class="link-card">
+        <div class="link-icon">💻</div>
+        <div class="link-content">
+          <span class="link-title">GitHub Profile</span>
+          <span class="link-desc">@gimpysticks — open source code & configs</span>
+        </div>
+        <svg class="link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <footer>
+      <p>© 2026 John Sticks Kilbane · Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+    </footer>
+  </div>
+</body>
+</html>
